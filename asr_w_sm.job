@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH --job-name=asr_w_sm.job
+#SBATCH --output=/home/akathpalia/data/asr_w_sm_out.txt
+#SBATCH --error=/home/akathpalia/data/asr_w_sm_err.txt
+#SBATCH --time=2-00:00
+#SBATCH --mem=50000
+#SBATCH --gres=gpu:1
+
+# Test CUDA compiler (not needed by deep learning people, we just use the python libraries)
+/cm/shared/apps/cuda11.1/toolkit/11.1.1/bin/nvcc -o saxpy /home/akathpalia/cuda_c_code/saxpy.cu && ./saxpy
+
+# Test nvidia-smi
+nvidia-smi
+
+# Test Python conda environment
+source activate sctv
+/home/akathpalia/miniconda3/envs/sctv/bin/python /home/akathpalia/data/SupremeCourtTv/src/asr_w_sm.py
