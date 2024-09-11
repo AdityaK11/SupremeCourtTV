@@ -540,20 +540,12 @@
 
 # Imports
 from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip, ColorClip, concatenate_videoclips, ImageSequenceClip
+from config import case_name, data_dir, video_dir, output_dir, output_file, background
 import os
 import re
 import json
 import cv2
 import numpy as np
-
-# Data
-case_name = 'case3'
-data_dir = f'/home/akathpalia/data/SupremeCourtTv/{case_name}'
-video_dir = f'{data_dir}/vids/'
-output_dir = f'{data_dir}/outputs/'
-output_file = f'{output_dir}output.mp4'
-background_image = f"{data_dir}/../src/images/bg.png"
-background = cv2.imread(background_image)
 
 if background is None:
     raise FileNotFoundError(f"Background image at '{background_image}' not found or cannot be loaded.")
@@ -606,53 +598,110 @@ def add_text_overlay(clip, line1, line2, position=('center', 'bottom'), fontsize
         return clip
 
 
-# Function to replace the green background
-def replace_frame_background(frame):
-    # Convert frame to HSV
-    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+# # Function to replace the green background
+# def replace_frame_background(frame):
+#     # Convert frame to HSV
+#     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     
-    # Define the range for the green color
-    lower_green = np.array([35, 100, 100])
-    upper_green = np.array([85, 255, 255])
+#     # Define the range for the green color
+#     lower_green = np.array([35, 100, 100])
+#     upper_green = np.array([85, 255, 255])
     
-    # Create a mask for the green color
-    mask = cv2.inRange(hsv, lower_green, upper_green)
+#     # Create a mask for the green color
+#     mask = cv2.inRange(hsv, lower_green, upper_green)
     
-    # Invert the mask
-    mask_inv = cv2.bitwise_not(mask)
+#     # Invert the mask
+#     mask_inv = cv2.bitwise_not(mask)
     
-    # Resize the background to match the frame
-    bg_resized = cv2.resize(background, (frame.shape[1], frame.shape[0]))
+#     # Resize the background to match the frame
+#     bg_resized = cv2.resize(background, (frame.shape[1], frame.shape[0]))
     
-    # Extract the foreground (subject)
-    fg = cv2.bitwise_and(frame, frame, mask=mask_inv)
+#     # Extract the foreground (subject)
+#     fg = cv2.bitwise_and(frame, frame, mask=mask_inv)
     
-    # Extract the background where the green is detected
-    bg = cv2.bitwise_and(bg_resized, bg_resized, mask=mask)
+#     # Extract the background where the green is detected
+#     bg = cv2.bitwise_and(bg_resized, bg_resized, mask=mask)
     
-    # Combine foreground and new background
-    combined = cv2.add(fg, bg)
-    return combined
+#     # Combine foreground and new background
+#     combined = cv2.add(fg, bg)
+#     return combined
 
 
-def replace_video_background(input_video, output_video):
-    # Process video frames
-    clip = VideoFileClip(input_video)
-    frames = []
+# def replace_video_background(input_video, output_video):
+#     # Process video frames
+#     clip = VideoFileClip(input_video)
+#     frames = []
 
-    for frame in clip.iter_frames():
-        # Convert the frame from MoviePy to OpenCV format
-        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
-        # Replace the background
-        frame_with_new_bg = replace_frame_background(frame)
-        # Convert back to RGB format for MoviePy
-        frame_with_new_bg = cv2.cvtColor(frame_with_new_bg, cv2.COLOR_BGR2RGB)
-        frames.append(frame_with_new_bg)
+#     for frame in clip.iter_frames():
+#         # Convert the frame from MoviePy to OpenCV format
+#         frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+#         # Replace the background
+#         frame_with_new_bg = replace_frame_background(frame)
+#         # Convert back to RGB format for MoviePy
+#         frame_with_new_bg = cv2.cvtColor(frame_with_new_bg, cv2.COLOR_BGR2RGB)
+#         frames.append(frame_with_new_bg)
 
-    # Create a new video clip with the processed frames
-    new_clip = ImageSequenceClip(frames, fps=clip.fps)
-    new_clip.write_videofile(output_video, codec='libx264')
+#     # Create a new video clip with the processed frames
+#     new_clip = ImageSequenceClip(frames, fps=clip.fps)
+#     new_clip.write_videofile(output_video, codec='libx264')
 
+
+
+# ------ Replace with video----------- #
+
+
+# def replace_green_screen(frame, background):
+#     # Convert frame to HSV color space
+#     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    
+#     # Define range for green color in HSV
+#     lower_green = np.array([40, 40, 40])
+#     upper_green = np.array([80, 255, 255])
+    
+#     # Create a mask for green color
+#     mask = cv2.inRange(hsv, lower_green, upper_green)
+    
+#     # Invert the mask
+#     mask_inv = cv2.bitwise_not(mask)
+    
+#     # Use the mask to extract the foreground
+#     foreground = cv2.bitwise_and(frame, frame, mask=mask_inv)
+    
+#     # Use the inverted mask to extract the background
+#     background_area = cv2.bitwise_and(background, background, mask=mask)
+    
+#     # Combine foreground and background
+#     result = cv2.add(foreground, background_area)
+    
+#     return result
+
+# def process_video(input_video, background_video, output_video):
+#     # Load the input video
+#     clip = VideoFileClip(input_video)
+    
+#     # Load the background video and loop it if necessary
+#     bg_clip = VideoFileClip(background_video).loop(duration=clip.duration)
+    
+#     # Ensure background video has the same size as the input video
+#     bg_clip = bg_clip.resize(clip.size)
+    
+#     # Process each frame
+#     def process_frame(frame):
+#         bg_frame = bg_clip.get_frame(clip.fps * clip.reader.time)
+#         return replace_green_screen(frame, bg_frame)
+    
+#     # Apply the processing to each frame
+#     final_clip = clip.fl_image(process_frame)
+    
+#     # Write the result to a file
+#     final_clip.write_videofile(output_video, codec='libx264')
+
+# # Usage
+# input_video = "green_screen_video.mp4"
+# background_video = "background_video.mp4"
+# output_video = "output_video.mp4"
+
+# process_video(input_video, background_video, output_video)
 
 def merge_videos_with_transition(video_files, data, transition_duration=1):
     clips = []
@@ -741,11 +790,97 @@ def merge_videos_with_transition(video_files, data, transition_duration=1):
 #         clip.close()
 #     final_clip.close()
 
-# Get all video files in the directory and sort them
-video_files = sorted([f for f in os.listdir(video_dir) if f.endswith('.mp4')],
-                     key=lambda x: int(re.search(r'(\d+)', os.path.basename(x)).group()))
-print(video_files)
-final_clip = merge_videos_with_transition(video_files, data['sentences'], transition_duration=1)
-final_clip.write_videofile(f"{output_file}", codec="libx264")
+# # Get all video files in the directory and sort them
+# video_files = sorted([f for f in os.listdir(video_dir) if f.endswith('.mp4')],
+#                      key=lambda x: int(re.search(r'(\d+)', os.path.basename(x)).group()))
+# print(video_files)
+# final_clip = merge_videos_with_transition(video_files, data['sentences'], transition_duration=1)
+# final_clip.write_videofile(f"{output_file}", codec="libx264")
 
 print("Final video with overlays and transitions created successfully.")
+
+
+# -------- merge optimization -------------#
+
+import subprocess
+
+def merge_videos_ffmpeg(video_files, output_file):
+    file_list = 'file_list.txt'
+    with open(file_list, 'w') as f:
+        for video in video_files:
+            f.write(f"file '{os.path.join(video_dir, video)}'\n")
+    
+    cmd = ['ffmpeg', '-f', 'concat', '-safe', '0', '-i', file_list, '-c', 'copy', output_file]
+    subprocess.run(cmd, check=True)
+    
+    os.remove(file_list)
+
+
+from concurrent.futures import ThreadPoolExecutor
+import multiprocessing
+
+def process_clip(file, data, custom_resolution):
+    try:
+        clip = VideoFileClip(os.path.join(video_dir, file))
+    except Exception as e:
+        print(f"Error processing {file}: {str(e)}")
+        return None
+    #clip = VideoFileClip(os.path.join(video_dir, file))
+    match = re.search(r'(\d+)', file)
+    i = int(match.group(1))
+    speaker = data[i]["speaker"]
+    line1 = speaker
+    line2 = "Lawyer" if not speaker.startswith("JUSTICE") else justices[speaker][1]
+    
+    # if clip.duration > 10:
+    #     clip = add_text_overlay(clip, line1, line2, position=('center', 'bottom'), fontsize1=24, fontsize2=16, color='white', bg_color='black', bg_opacity=0.5, display_duration=8)
+    
+    return clip.resize(newsize=custom_resolution)
+
+def process_clips_parallel(video_files, data, custom_resolution):
+    with ThreadPoolExecutor(max_workers=multiprocessing.cpu_count()) as executor:
+        return list(executor.map(lambda f: process_clip(f, data, custom_resolution), video_files))
+
+
+def merge_videos_ffmpeg_gpu(video_files, output_file):
+    file_list = 'file_list.txt'
+    with open(file_list, 'w') as f:
+        for video in video_files:
+            try:
+                clip = VideoFileClip(os.path.join(video_dir, video))
+            except Exception as e:
+                print(f"Error processing {file}: {str(e)}")
+                continue
+            f.write(f"file '{os.path.join(video_dir, video)}'\n")
+    
+    cmd = ['ffmpeg', '-f', 'concat', '-safe', '0', '-i', file_list, '-c:v', 'h264_nvenc', '-preset', 'fast', output_file]
+    subprocess.run(cmd, check=True)
+    
+    os.remove(file_list)
+
+def optimized_merge_videos_with_transition(video_files, data, output_file, transition_duration=1):
+    custom_resolution = (1920, 1080)
+    
+    # Process clips in parallel
+    #processed_clips = process_clips_parallel(video_files[:20], data, custom_resolution)
+    
+    # Create a temporary file for each processed clip
+    # temp_files = []
+    # for i, clip in enumerate(processed_clips):
+    #     if not clip:
+    #         continue
+    #     temp_file = f'temp_{i}.mp4'
+    #     clip.write_videofile(temp_file, codec='libx264')
+    #     temp_files.append(temp_file)
+    
+    # Merge using FFmpeg
+    merge_videos_ffmpeg_gpu(video_files[:20], output_file)
+    
+    # Clean up temporary files
+    # for temp_file in temp_files:
+    #     os.remove(temp_file)
+
+# Usage
+video_files = sorted([f for f in os.listdir(video_dir) if f.endswith('.mp4')],
+                     key=lambda x: int(re.search(r'(\d+)', os.path.basename(x)).group()))
+optimized_merge_videos_with_transition(video_files, data['sentences'], output_file)

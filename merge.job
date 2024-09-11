@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=merge.job
-#SBATCH --output=/home/akathpalia/data/merge_out.txt
-#SBATCH --error=/home/akathpalia/data/merge_err.txt
+#SBATCH --output=/home/akathpalia/data/SupremeCourtTV/merge_out.txt
+#SBATCH --error=/home/akathpalia/data/SupremeCourtTV/merge_err.txt
 #SBATCH --time=2-00:00
 #SBATCH --mem=50000
 #SBATCH --gres=gpu:4
@@ -14,4 +14,4 @@ nvidia-smi
 
 # Test Python conda environment
 source activate py38
-/home/akathpalia/miniconda3/envs/py38/bin/python /home/akathpalia/data/SupremeCourtTv/src/merge.py
+/home/akathpalia/miniconda3/envs/py38/bin/python /home/akathpalia/data/SupremeCourtTV/src/merge.py
