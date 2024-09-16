@@ -1,4 +1,4 @@
-Wed Sep 11 17:00:22 2024       
+Mon Sep 16 16:02:56 2024       
 +---------------------------------------------------------------------------------------+
 | NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
 |-----------------------------------------+----------------------+----------------------+
@@ -6,20 +6,20 @@ Wed Sep 11 17:00:22 2024
 | Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
 |                                         |                      |               MIG M. |
 |=========================================+======================+======================|
-|   0  Tesla V100-SXM2-32GB            On | 00000000:88:00.0 Off |                    0 |
-| N/A   29C    P0               39W / 300W|      0MiB / 32768MiB |      0%      Default |
-|                                         |                      |                  N/A |
-+-----------------------------------------+----------------------+----------------------+
-|   1  Tesla V100-SXM2-32GB            On | 00000000:89:00.0 Off |                    0 |
-| N/A   31C    P0               40W / 300W|      0MiB / 32768MiB |      0%      Default |
-|                                         |                      |                  N/A |
-+-----------------------------------------+----------------------+----------------------+
-|   2  Tesla V100-SXM2-32GB            On | 00000000:B2:00.0 Off |                    0 |
+|   0  Tesla V100-SXM2-32GB            On | 00000000:1A:00.0 Off |                    0 |
 | N/A   30C    P0               40W / 300W|      0MiB / 32768MiB |      0%      Default |
 |                                         |                      |                  N/A |
 +-----------------------------------------+----------------------+----------------------+
-|   3  Tesla V100-SXM2-32GB            On | 00000000:B3:00.0 Off |                    0 |
-| N/A   28C    P0               40W / 300W|      0MiB / 32768MiB |      0%      Default |
+|   1  Tesla V100-SXM2-32GB            On | 00000000:1B:00.0 Off |                    0 |
+| N/A   33C    P0               41W / 300W|      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2-32GB            On | 00000000:3D:00.0 Off |                    0 |
+| N/A   32C    P0               41W / 300W|      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2-32GB            On | 00000000:3E:00.0 Off |                    0 |
+| N/A   31C    P0               39W / 300W|      0MiB / 32768MiB |      0%      Default |
 |                                         |                      |                  N/A |
 +-----------------------------------------+----------------------+----------------------+
                                                                                          
@@ -30,38 +30,511 @@ Wed Sep 11 17:00:22 2024
 |=======================================================================================|
 |  No running processes found                                                           |
 +---------------------------------------------------------------------------------------+
-Final video with overlays and transitions created successfully.
-Error processing <_io.TextIOWrapper name='/home/akathpalia/data/case3/case3.json' mode='r' encoding='UTF-8'>: MoviePy error: failed to read the duration of file /home/akathpalia/data/case3/vids/1.mp4.
-Here are the file infos returned by ffmpeg:
-
-ffmpeg version 4.2.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2019 the FFmpeg developers
-  built with gcc 8 (Debian 8.3.0-6)
-  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg
-  libavutil      56. 31.100 / 56. 31.100
-  libavcodec     58. 54.100 / 58. 54.100
-  libavformat    58. 29.100 / 58. 29.100
-  libavdevice    58.  8.100 / 58.  8.100
-  libavfilter     7. 57.100 /  7. 57.100
-  libswscale      5.  5.100 /  5.  5.100
-  libswresample   3.  5.100 /  3.  5.100
-  libpostproc    55.  5.100 / 55.  5.100
-[mov,mp4,m4a,3gp,3g2,mj2 @ 0x5501740] moov atom not found
-/home/akathpalia/data/case3/vids/1.mp4: Invalid data found when processing input
-
-Error processing <_io.TextIOWrapper name='/home/akathpalia/data/case3/case3.json' mode='r' encoding='UTF-8'>: MoviePy error: failed to read the duration of file /home/akathpalia/data/case3/vids/3.mp4.
-Here are the file infos returned by ffmpeg:
-
-ffmpeg version 4.2.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2019 the FFmpeg developers
-  built with gcc 8 (Debian 8.3.0-6)
-  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg
-  libavutil      56. 31.100 / 56. 31.100
-  libavcodec     58. 54.100 / 58. 54.100
-  libavformat    58. 29.100 / 58. 29.100
-  libavdevice    58.  8.100 / 58.  8.100
-  libavfilter     7. 57.100 /  7. 57.100
-  libswscale      5.  5.100 /  5.  5.100
-  libswresample   3.  5.100 /  3.  5.100
-  libpostproc    55.  5.100 / 55.  5.100
-[mov,mp4,m4a,3gp,3g2,mj2 @ 0x5501740] moov atom not found
-/home/akathpalia/data/case3/vids/3.mp4: Invalid data found when processing input
-
+['1.mp4', '2.mp4', '3.mp4', '4.mp4', '5.mp4', '6.mp4', '7.mp4', '8.mp4', '9.mp4', '10.mp4', '11.mp4', '12.mp4', '13.mp4', '14.mp4', '15.mp4', '16.mp4', '17.mp4', '18.mp4', '19.mp4', '20.mp4', '21.mp4', '22.mp4', '23.mp4', '24.mp4', '25.mp4', '26.mp4', '27.mp4', '28.mp4', '29.mp4', '30.mp4', '31.mp4', '32.mp4', '33.mp4', '34.mp4', '35.mp4', '36.mp4', '37.mp4', '38.mp4', '39.mp4', '40.mp4', '41.mp4', '42.mp4', '43.mp4', '44.mp4', '45.mp4', '46.mp4', '47.mp4', '48.mp4', '49.mp4', '50.mp4', '51.mp4', '52.mp4', '53.mp4', '54.mp4', '55.mp4', '56.mp4', '57.mp4', '58.mp4', '59.mp4', '60.mp4', '61.mp4', '62.mp4', '63.mp4', '64.mp4', '65.mp4', '67.mp4', '68.mp4', '69.mp4', '70.mp4', '71.mp4', '72.mp4', '73.mp4', '74.mp4', '75.mp4', '76.mp4', '77.mp4', '78.mp4', '79.mp4', '80.mp4', '81.mp4', '82.mp4', '83.mp4', '84.mp4', '85.mp4', '86.mp4', '87.mp4', '88.mp4', '89.mp4', '90.mp4', '91.mp4', '92.mp4', '93.mp4', '94.mp4', '95.mp4', '96.mp4', '97.mp4', '98.mp4', '99.mp4', '100.mp4', '101.mp4', '102.mp4', '103.mp4', '104.mp4', '105.mp4', '106.mp4', '107.mp4', '108.mp4', '109.mp4', '110.mp4', '111.mp4', '112.mp4', '113.mp4', '114.mp4', '115.mp4', '116.mp4', '117.mp4', '118.mp4', '119.mp4', '120.mp4', '121.mp4', '122.mp4', '123.mp4', '124.mp4', '125.mp4', '126.mp4', '127.mp4', '128.mp4', '129.mp4', '130.mp4', '131.mp4', '132.mp4', '133.mp4', '134.mp4', '135.mp4', '136.mp4', '137.mp4', '138.mp4', '139.mp4', '140.mp4', '141.mp4', '142.mp4', '143.mp4', '144.mp4', '145.mp4', '146.mp4', '147.mp4', '148.mp4', '149.mp4', '150.mp4', '151.mp4', '152.mp4', '153.mp4', '154.mp4', '155.mp4', '156.mp4', '157.mp4', '158.mp4', '159.mp4', '160.mp4', '161.mp4', '162.mp4', '163.mp4', '164.mp4', '165.mp4', '166.mp4', '167.mp4', '168.mp4', '169.mp4', '170.mp4', '171.mp4', '172.mp4', '173.mp4', '174.mp4', '175.mp4', '176.mp4', '177.mp4', '178.mp4', '179.mp4', '180.mp4', '181.mp4', '182.mp4', '183.mp4', '184.mp4', '185.mp4', '186.mp4', '187.mp4', '188.mp4', '189.mp4', '190.mp4', '191.mp4', '192.mp4', '193.mp4', '194.mp4', '195.mp4', '196.mp4', '197.mp4', '198.mp4', '199.mp4', '200.mp4', '201.mp4', '202.mp4', '203.mp4', '204.mp4', '205.mp4', '206.mp4', '207.mp4', '208.mp4', '209.mp4', '210.mp4', '211.mp4', '212.mp4', '213.mp4', '214.mp4', '215.mp4', '216.mp4', '217.mp4', '218.mp4', '219.mp4', '220.mp4', '221.mp4', '222.mp4', '224.mp4', '225.mp4', '226.mp4', '227.mp4', '228.mp4', '229.mp4', '230.mp4', '231.mp4']
+1
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+2
+JUSTICE THOMAS
+Appointed by President George H.W. Bush (1991)
+Justice
+Adding text overlay: JUSTICE THOMAS, Appointed by President George H.W. Bush (1991)
+Adding text: JUSTICE THOMAS
+Text clip 1 generated
+Adding text: Appointed by President George H.W. Bush (1991)
+Text clips generated
+3
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+4
+JUSTICE THOMAS
+Appointed by President George H.W. Bush (1991)
+Justice
+5
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+6
+JUSTICE THOMAS
+Appointed by President George H.W. Bush (1991)
+Justice
+7
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+8
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+9
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+10
+MR. STEWART
+Lawyer
+11
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+Adding text overlay: JUSTICE BREYER, Appointed by President Bill Clinton (1994)
+Adding text: JUSTICE BREYER
+Text clip 1 generated
+Adding text: Appointed by President Bill Clinton (1994)
+Text clips generated
+12
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+13
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+14
+MR. STEWART
+Lawyer
+15
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+16
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+17
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+Adding text overlay: JUSTICE BREYER, Appointed by President Bill Clinton (1994)
+Adding text: JUSTICE BREYER
+Text clip 1 generated
+Adding text: Appointed by President Bill Clinton (1994)
+Text clips generated
+18
+MR. STEWART
+Lawyer
+19
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+20
+MR. STEWART
+Lawyer
+21
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+Adding text overlay: JUSTICE SOTOMAYOR, Appointed by President Barack Obama (2009)
+Adding text: JUSTICE SOTOMAYOR
+Text clip 1 generated
+Adding text: Appointed by President Barack Obama (2009)
+Text clips generated
+22
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+Adding text overlay: JUSTICE SOTOMAYOR, Appointed by President Barack Obama (2009)
+Adding text: JUSTICE SOTOMAYOR
+Text clip 1 generated
+Adding text: Appointed by President Barack Obama (2009)
+Text clips generated
+23
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+24
+MR. STEWART
+Lawyer
+25
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+26
+MR. STEWART
+Lawyer
+27
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+28
+MR. STEWART
+Lawyer
+29
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+30
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+31
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+32
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+33
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+34
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+Adding text overlay: JUSTICE SOTOMAYOR, Appointed by President Barack Obama (2009)
+Adding text: JUSTICE SOTOMAYOR
+Text clip 1 generated
+Adding text: Appointed by President Barack Obama (2009)
+Text clips generated
+35
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+36
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+37
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+38
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+39
+JUSTICE ROBERTS
+Appointed by President George W. Bush (2005)
+Justice
+Adding text overlay: JUSTICE ROBERTS, Appointed by President George W. Bush (2005)
+Adding text: JUSTICE ROBERTS
+Text clip 1 generated
+Adding text: Appointed by President George W. Bush (2005)
+Text clips generated
+40
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+41
+JUSTICE ROBERTS
+Appointed by President George W. Bush (2005)
+Justice
+42
+MR. STEWART
+Lawyer
+43
+JUSTICE ROBERTS
+Appointed by President George W. Bush (2005)
+Justice
+44
+MR. STEWART
+Lawyer
+45
+JUSTICE ROBERTS
+Appointed by President George W. Bush (2005)
+Justice
+Adding text overlay: JUSTICE ROBERTS, Appointed by President George W. Bush (2005)
+Adding text: JUSTICE ROBERTS
+Text clip 1 generated
+Adding text: Appointed by President George W. Bush (2005)
+Text clips generated
+46
+MR. STEWART
+Lawyer
+47
+MR. STEWART
+Lawyer
+48
+JUSTICE ROBERTS
+Appointed by President George W. Bush (2005)
+Justice
+Adding text overlay: JUSTICE ROBERTS, Appointed by President George W. Bush (2005)
+Adding text: JUSTICE ROBERTS
+Text clip 1 generated
+Adding text: Appointed by President George W. Bush (2005)
+Text clips generated
+49
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+50
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+51
+MR. STEWART
+Lawyer
+52
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+Adding text overlay: JUSTICE SOTOMAYOR, Appointed by President Barack Obama (2009)
+Adding text: JUSTICE SOTOMAYOR
+Text clip 1 generated
+Adding text: Appointed by President Barack Obama (2009)
+Text clips generated
+53
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+54
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+Adding text overlay: JUSTICE SOTOMAYOR, Appointed by President Barack Obama (2009)
+Adding text: JUSTICE SOTOMAYOR
+Text clip 1 generated
+Adding text: Appointed by President Barack Obama (2009)
+Text clips generated
+55
+MR. STEWART
+Lawyer
+56
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+57
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+58
+JUSTICE BARRETT
+Appointed by President Donald Trump (2020)
+Justice
+59
+JUSTICE BARRETT
+Appointed by President Donald Trump (2020)
+Justice
+60
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+61
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+62
+MR. STEWART
+Lawyer
+63
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+Adding text overlay: JUSTICE BREYER, Appointed by President Bill Clinton (1994)
+Adding text: JUSTICE BREYER
+Text clip 1 generated
+Adding text: Appointed by President Bill Clinton (1994)
+Text clips generated
+64
+MR. STEWART
+Lawyer
+65
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+67
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+Adding text overlay: JUSTICE BREYER, Appointed by President Bill Clinton (1994)
+Adding text: JUSTICE BREYER
+Text clip 1 generated
+Adding text: Appointed by President Bill Clinton (1994)
+Text clips generated
+68
+MR. STEWART
+Lawyer
+69
+JUSTICE BREYER
+Appointed by President Bill Clinton (1994)
+Justice
+70
+MR. STEWART
+Lawyer
+Adding text overlay: MR. STEWART, Lawyer
+Adding text: MR. STEWART
+Text clip 1 generated
+Adding text: Lawyer
+Text clips generated
+71
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+Adding text overlay: JUSTICE SOTOMAYOR, Appointed by President Barack Obama (2009)
+Adding text: JUSTICE SOTOMAYOR
+Text clip 1 generated
+Adding text: Appointed by President Barack Obama (2009)
+Text clips generated
+72
+MR. STEWART
+Lawyer
+73
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+74
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+75
+MR. STEWART
+Lawyer
+76
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+Adding text overlay: JUSTICE SOTOMAYOR, Appointed by President Barack Obama (2009)
+Adding text: JUSTICE SOTOMAYOR
+Text clip 1 generated
+Adding text: Appointed by President Barack Obama (2009)
+Text clips generated
+77
+MR. STEWART
+Lawyer
+78
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+Adding text overlay: JUSTICE SOTOMAYOR, Appointed by President Barack Obama (2009)
+Adding text: JUSTICE SOTOMAYOR
+Text clip 1 generated
+Adding text: Appointed by President Barack Obama (2009)
+Text clips generated
+79
+MR. STEWART
+Lawyer
+80
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+81
+MR. STEWART
+Lawyer
+82
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+83
+MR. STEWART
+Lawyer
+84
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+85
+MR. STEWART
+Lawyer
+86
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+87
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+88
+MR. STEWART
+Lawyer
+89
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+90
+MR. STEWART
+Lawyer
+91
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+Adding text overlay: JUSTICE SOTOMAYOR, Appointed by President Barack Obama (2009)
+Adding text: JUSTICE SOTOMAYOR
+Text clip 1 generated
+Adding text: Appointed by President Barack Obama (2009)
+Text clips generated
+92
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+Adding text overlay: JUSTICE SOTOMAYOR, Appointed by President Barack Obama (2009)
+Adding text: JUSTICE SOTOMAYOR
+Text clip 1 generated
+Adding text: Appointed by President Barack Obama (2009)
+Text clips generated
+93
+MR. STEWART
+Lawyer
+94
+JUSTICE SOTOMAYOR
+Appointed by President Barack Obama (2009)
+Justice
+95
+MR. STEWART
+Lawyer

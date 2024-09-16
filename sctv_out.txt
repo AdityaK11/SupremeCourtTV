@@ -1,0 +1,1677 @@
+Sun Sep 15 16:46:07 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 530.30.02              Driver Version: 530.30.02    CUDA Version: 12.1     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                  Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf            Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla V100-SXM2-32GB            On | 00000000:88:00.0 Off |                    0 |
+| N/A   29C    P0               39W / 300W|      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2-32GB            On | 00000000:89:00.0 Off |                    0 |
+| N/A   32C    P0               40W / 300W|      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2-32GB            On | 00000000:B2:00.0 Off |                    0 |
+| N/A   30C    P0               40W / 300W|      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2-32GB            On | 00000000:B3:00.0 Off |                    0 |
+| N/A   29C    P0               40W / 300W|      0MiB / 32768MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+using safetensor as default
+Downloading: "https://github.com/xinntao/facexlib/releases/download/v0.1.0/alignment_WFLW_4HG.pth" to /home/akathpalia/data/SupremeCourtTV/gfpgan/weights/alignment_WFLW_4HG.pth
+
+using safetensor as default
+Downloading: "https://github.com/xinntao/facexlib/releases/download/v0.1.0/alignment_WFLW_4HG.pth" to /home/akathpalia/data/SupremeCourtTV/gfpgan/weights/alignment_WFLW_4HG.pth
+
+using safetensor as default
+Downloading: "https://github.com/xinntao/facexlib/releases/download/v0.1.0/alignment_WFLW_4HG.pth" to /home/akathpalia/data/SupremeCourtTV/gfpgan/weights/alignment_WFLW_4HG.pth
+
+using safetensor as default
+Downloading: "https://github.com/xinntao/facexlib/releases/download/v0.1.0/alignment_WFLW_4HG.pth" to /home/akathpalia/data/SupremeCourtTV/gfpgan/weights/alignment_WFLW_4HG.pth
+
+Downloading: "https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth" to /home/akathpalia/data/SupremeCourtTV/gfpgan/weights/detection_Resnet50_Final.pth
+
+Downloading: "https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth" to /home/akathpalia/data/SupremeCourtTV/gfpgan/weights/detection_Resnet50_Final.pth
+
+Downloading: "https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth" to /home/akathpalia/data/SupremeCourtTV/gfpgan/weights/detection_Resnet50_Final.pth
+
+Downloading: "https://github.com/xinntao/facexlib/releases/download/v0.1.0/detection_Resnet50_Final.pth" to /home/akathpalia/data/SupremeCourtTV/gfpgan/weights/detection_Resnet50_Final.pth
+
+3DMM Extraction for source image
+3DMM Extraction for source image
+3DMM Extraction for source image
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/4/justice_thomas##5.mp4
+The generated video is named /home/akathpalia/data/case3/vids/4/justice_thomas##5_full.mp4
+face enhancer....
+Downloading: "https://github.com/xinntao/facexlib/releases/download/v0.2.2/parsing_parsenet.pth" to /home/akathpalia/data/SupremeCourtTV/gfpgan/weights/parsing_parsenet.pth
+
+The generated video is named /home/akathpalia/data/case3/vids/2/justice_thomas##3.mp4
+The generated video is named /home/akathpalia/data/case3/vids/2/justice_thomas##3_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/3/male1##4.mp4
+The generated video is named /home/akathpalia/data/case3/vids/4/justice_thomas##5_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/4.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/3/male1##4_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/1/male1##2.mp4
+The generated video is named /home/akathpalia/data/case3/vids/5/male1##6.mp4
+The generated video is named /home/akathpalia/data/case3/vids/2/justice_thomas##3_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/2.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/5/male1##6_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/6/justice_thomas##7.mp4
+The generated video is named /home/akathpalia/data/case3/vids/6/justice_thomas##7_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/6/justice_thomas##7_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/6.mp4
+The generated video is named /home/akathpalia/data/case3/vids/1/male1##2_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/7/male1##8.mp4
+The generated video is named /home/akathpalia/data/case3/vids/7/male1##8_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/7/male1##8_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/7.mp4
+The generated video is named /home/akathpalia/data/case3/vids/3/male1##4_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/3.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/9/justice_breyer##10.mp4
+The generated video is named /home/akathpalia/data/case3/vids/8/justice_breyer##9.mp4
+The generated video is named /home/akathpalia/data/case3/vids/9/justice_breyer##10_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/8/justice_breyer##9_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/9/justice_breyer##10_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/9.mp4
+The generated video is named /home/akathpalia/data/case3/vids/8/justice_breyer##9_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/8.mp4
+The generated video is named /home/akathpalia/data/case3/vids/5/male1##6_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/5.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/10/male1##11.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/10/male1##11_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/10/male1##11_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/10.mp4
+The generated video is named /home/akathpalia/data/case3/vids/12/male1##13.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/13/justice_breyer##14.mp4
+The generated video is named /home/akathpalia/data/case3/vids/13/justice_breyer##14_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/12/male1##13_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/13/justice_breyer##14_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/13.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/14/male1##15.mp4
+The generated video is named /home/akathpalia/data/case3/vids/14/male1##15_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/14/male1##15_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/14.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/15/justice_breyer##16.mp4
+The generated video is named /home/akathpalia/data/case3/vids/15/justice_breyer##16_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/15/justice_breyer##16_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/15.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/11/justice_breyer##12.mp4
+The generated video is named /home/akathpalia/data/case3/vids/16/male1##17.mp4
+The generated video is named /home/akathpalia/data/case3/vids/11/justice_breyer##12_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/16/male1##17_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/12/male1##13_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/12.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/17/justice_breyer##18.mp4
+The generated video is named /home/akathpalia/data/case3/vids/17/justice_breyer##18_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/17/justice_breyer##18_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/17.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/18/male1##19.mp4
+The generated video is named /home/akathpalia/data/case3/vids/18/male1##19_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/18/male1##19_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/18.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/19/male1##20.mp4
+The generated video is named /home/akathpalia/data/case3/vids/19/male1##20_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/11/justice_breyer##12_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/11.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/20/male1##21.mp4
+The generated video is named /home/akathpalia/data/case3/vids/20/male1##21_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/20/male1##21_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/20.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/21/justice_sotomayor##22.mp4
+The generated video is named /home/akathpalia/data/case3/vids/21/justice_sotomayor##22_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/1/male1##2_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/1.mp4
+The generated video is named /home/akathpalia/data/case3/vids/19/male1##20_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/19.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/23/male1##24.mp4
+The generated video is named /home/akathpalia/data/case3/vids/23/male1##24_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/22/justice_sotomayor##23.mp4
+The generated video is named /home/akathpalia/data/case3/vids/22/justice_sotomayor##23_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/21/justice_sotomayor##22_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/21.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/24/male1##25.mp4
+The generated video is named /home/akathpalia/data/case3/vids/24/male1##25_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/24/male1##25_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/24.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/25/justice_sotomayor##26.mp4
+The generated video is named /home/akathpalia/data/case3/vids/25/justice_sotomayor##26_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/16/male1##17_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/16.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/26/male1##27.mp4
+The generated video is named /home/akathpalia/data/case3/vids/26/male1##27_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/25/justice_sotomayor##26_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/25.mp4
+The generated video is named /home/akathpalia/data/case3/vids/26/male1##27_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/26.mp4
+The generated video is named /home/akathpalia/data/case3/vids/22/justice_sotomayor##23_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/22.mp4
+The generated video is named /home/akathpalia/data/case3/vids/23/male1##24_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/23.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/27/justice_sotomayor##28.mp4
+The generated video is named /home/akathpalia/data/case3/vids/28/male1##29.mp4
+The generated video is named /home/akathpalia/data/case3/vids/27/justice_sotomayor##28_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/28/male1##29_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/27/justice_sotomayor##28_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/27.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/29/justice_sotomayor##30.mp4
+The generated video is named /home/akathpalia/data/case3/vids/29/justice_sotomayor##30_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/28/male1##29_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/28.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/31/justice_sotomayor##32.mp4
+The generated video is named /home/akathpalia/data/case3/vids/31/justice_sotomayor##32_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/31/justice_sotomayor##32_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/31.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/32/justice_sotomayor##33.mp4
+The generated video is named /home/akathpalia/data/case3/vids/32/justice_sotomayor##33_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/30/male1##31.mp4
+The generated video is named /home/akathpalia/data/case3/vids/32/justice_sotomayor##33_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/32.mp4
+The generated video is named /home/akathpalia/data/case3/vids/29/justice_sotomayor##30_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/29.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/33/male1##34.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/35/justice_sotomayor##36.mp4
+The generated video is named /home/akathpalia/data/case3/vids/33/male1##34_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/30/male1##31_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/35/justice_sotomayor##36_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/34/justice_sotomayor##35.mp4
+The generated video is named /home/akathpalia/data/case3/vids/35/justice_sotomayor##36_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/35.mp4
+The generated video is named /home/akathpalia/data/case3/vids/34/justice_sotomayor##35_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/36/justice_sotomayor##37.mp4
+The generated video is named /home/akathpalia/data/case3/vids/36/justice_sotomayor##37_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/36/justice_sotomayor##37_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/36.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/37/male1##38.mp4
+The generated video is named /home/akathpalia/data/case3/vids/37/male1##38_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/34/justice_sotomayor##35_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/34.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/38/justice_sotomayor##39.mp4
+The generated video is named /home/akathpalia/data/case3/vids/38/justice_sotomayor##39_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/38/justice_sotomayor##39_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/38.mp4
+The generated video is named /home/akathpalia/data/case3/vids/33/male1##34_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/33.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/39/justice_roberts##40.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/39/justice_roberts##40_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/40/male1##41.mp4
+The generated video is named /home/akathpalia/data/case3/vids/40/male1##41_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/39/justice_roberts##40_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/39.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/41/justice_roberts##42.mp4
+The generated video is named /home/akathpalia/data/case3/vids/41/justice_roberts##42_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/41/justice_roberts##42_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/41.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/42/male1##43.mp4
+The generated video is named /home/akathpalia/data/case3/vids/42/male1##43_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/42/male1##43_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/42.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/43/justice_roberts##44.mp4
+The generated video is named /home/akathpalia/data/case3/vids/43/justice_roberts##44_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/43/justice_roberts##44_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/43.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/44/male1##45.mp4
+The generated video is named /home/akathpalia/data/case3/vids/44/male1##45_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/37/male1##38_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/37.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/45/justice_roberts##46.mp4
+The generated video is named /home/akathpalia/data/case3/vids/45/justice_roberts##46_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/45/justice_roberts##46_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/45.mp4
+The generated video is named /home/akathpalia/data/case3/vids/44/male1##45_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/44.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/47/male1##48.mp4
+The generated video is named /home/akathpalia/data/case3/vids/47/male1##48_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/46/male1##47.mp4
+The generated video is named /home/akathpalia/data/case3/vids/46/male1##47_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/47/male1##48_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/47.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/40/male1##41_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/40.mp4
+The generated video is named /home/akathpalia/data/case3/vids/30/male1##31_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/30.mp4
+The generated video is named /home/akathpalia/data/case3/vids/48/justice_roberts##49.mp4
+The generated video is named /home/akathpalia/data/case3/vids/48/justice_roberts##49_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/50/justice_sotomayor##51.mp4
+The generated video is named /home/akathpalia/data/case3/vids/50/justice_sotomayor##51_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/50/justice_sotomayor##51_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/50.mp4
+The generated video is named /home/akathpalia/data/case3/vids/49/male1##50.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/51/male1##52.mp4
+The generated video is named /home/akathpalia/data/case3/vids/51/male1##52_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/49/male1##50_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/48/justice_roberts##49_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/48.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/51/male1##52_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/51.mp4
+The generated video is named /home/akathpalia/data/case3/vids/46/male1##47_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/46.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/53/male1##54.mp4
+The generated video is named /home/akathpalia/data/case3/vids/53/male1##54_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/52/justice_sotomayor##53.mp4
+The generated video is named /home/akathpalia/data/case3/vids/52/justice_sotomayor##53_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/54/justice_sotomayor##55.mp4
+The generated video is named /home/akathpalia/data/case3/vids/54/justice_sotomayor##55_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/49/male1##50_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/49.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/52/justice_sotomayor##53_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/52.mp4
+The generated video is named /home/akathpalia/data/case3/vids/55/male1##56.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/55/male1##56_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/56/justice_sotomayor##57.mp4
+The generated video is named /home/akathpalia/data/case3/vids/56/justice_sotomayor##57_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/56/justice_sotomayor##57_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/56.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/53/male1##54_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/53.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/57/male1##58.mp4
+The generated video is named /home/akathpalia/data/case3/vids/58/justice_barrett##59.mp4
+The generated video is named /home/akathpalia/data/case3/vids/58/justice_barrett##59_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/58/justice_barrett##59_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/58.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/59/justice_barrett##60.mp4
+The generated video is named /home/akathpalia/data/case3/vids/59/justice_barrett##60_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/57/male1##58_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/54/justice_sotomayor##55_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/54.mp4
+The generated video is named /home/akathpalia/data/case3/vids/55/male1##56_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/55.mp4
+The generated video is named /home/akathpalia/data/case3/vids/59/justice_barrett##60_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/59.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/62/male1##63.mp4
+The generated video is named /home/akathpalia/data/case3/vids/62/male1##63_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/62/male1##63_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/62.mp4
+The generated video is named /home/akathpalia/data/case3/vids/61/justice_breyer##62.mp4
+The generated video is named /home/akathpalia/data/case3/vids/61/justice_breyer##62_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/60/male1##61.mp4
+The generated video is named /home/akathpalia/data/case3/vids/63/justice_breyer##64.mp4
+The generated video is named /home/akathpalia/data/case3/vids/61/justice_breyer##62_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/61.mp4
+The generated video is named /home/akathpalia/data/case3/vids/63/justice_breyer##64_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/64/male1##65.mp4
+The generated video is named /home/akathpalia/data/case3/vids/60/male1##61_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/64/male1##65_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/63/justice_breyer##64_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/63.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/65/justice_breyer##66.mp4
+The generated video is named /home/akathpalia/data/case3/vids/65/justice_breyer##66_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/65/justice_breyer##66_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/65.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/67/justice_breyer##68.mp4
+The generated video is named /home/akathpalia/data/case3/vids/64/male1##65_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/64.mp4
+The generated video is named /home/akathpalia/data/case3/vids/67/justice_breyer##68_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/68/male1##69.mp4
+The generated video is named /home/akathpalia/data/case3/vids/68/male1##69_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/68/male1##69_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/68.mp4
+The generated video is named /home/akathpalia/data/case3/vids/67/justice_breyer##68_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/67.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/69/justice_breyer##70.mp4
+The generated video is named /home/akathpalia/data/case3/vids/69/justice_breyer##70_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/69/justice_breyer##70_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/69.mp4
+The generated video is named /home/akathpalia/data/case3/vids/70/male1##71.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/70/male1##71_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/71/justice_sotomayor##72.mp4
+The generated video is named /home/akathpalia/data/case3/vids/71/justice_sotomayor##72_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/71/justice_sotomayor##72_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/71.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/72/male1##73.mp4
+The generated video is named /home/akathpalia/data/case3/vids/72/male1##73_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/72/male1##73_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/72.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/73/justice_sotomayor##74.mp4
+The generated video is named /home/akathpalia/data/case3/vids/73/justice_sotomayor##74_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/73/justice_sotomayor##74_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/73.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/74/justice_sotomayor##75.mp4
+The generated video is named /home/akathpalia/data/case3/vids/74/justice_sotomayor##75_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/70/male1##71_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/70.mp4
+The generated video is named /home/akathpalia/data/case3/vids/74/justice_sotomayor##75_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/74.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/75/male1##76.mp4
+The generated video is named /home/akathpalia/data/case3/vids/75/male1##76_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/76/justice_sotomayor##77.mp4
+The generated video is named /home/akathpalia/data/case3/vids/76/justice_sotomayor##77_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/76/justice_sotomayor##77_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/76.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/77/male1##78.mp4
+The generated video is named /home/akathpalia/data/case3/vids/77/male1##78_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/57/male1##58_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/57.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/75/male1##76_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/75.mp4
+The generated video is named /home/akathpalia/data/case3/vids/77/male1##78_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/77.mp4
+The generated video is named /home/akathpalia/data/case3/vids/78/justice_sotomayor##79.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/78/justice_sotomayor##79_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/79/male1##80.mp4
+The generated video is named /home/akathpalia/data/case3/vids/79/male1##80_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/80/justice_sotomayor##81.mp4
+The generated video is named /home/akathpalia/data/case3/vids/80/justice_sotomayor##81_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/80/justice_sotomayor##81_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/80.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/81/male1##82.mp4
+The generated video is named /home/akathpalia/data/case3/vids/81/male1##82_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/78/justice_sotomayor##79_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/78.mp4
+The generated video is named /home/akathpalia/data/case3/vids/81/male1##82_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/81.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/79/male1##80_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/79.mp4
+The generated video is named /home/akathpalia/data/case3/vids/60/male1##61_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/60.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/82/justice_sotomayor##83.mp4
+The generated video is named /home/akathpalia/data/case3/vids/82/justice_sotomayor##83_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/83/male1##84.mp4
+The generated video is named /home/akathpalia/data/case3/vids/82/justice_sotomayor##83_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/82.mp4
+The generated video is named /home/akathpalia/data/case3/vids/83/male1##84_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/84/justice_sotomayor##85.mp4
+The generated video is named /home/akathpalia/data/case3/vids/85/male1##86.mp4
+The generated video is named /home/akathpalia/data/case3/vids/84/justice_sotomayor##85_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/86/justice_sotomayor##87.mp4
+The generated video is named /home/akathpalia/data/case3/vids/85/male1##86_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/86/justice_sotomayor##87_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/84/justice_sotomayor##85_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/84.mp4
+The generated video is named /home/akathpalia/data/case3/vids/86/justice_sotomayor##87_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/86.mp4
+The generated video is named /home/akathpalia/data/case3/vids/83/male1##84_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/83.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/87/justice_sotomayor##88.mp4
+The generated video is named /home/akathpalia/data/case3/vids/88/male1##89.mp4
+The generated video is named /home/akathpalia/data/case3/vids/87/justice_sotomayor##88_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/87/justice_sotomayor##88_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/87.mp4
+The generated video is named /home/akathpalia/data/case3/vids/88/male1##89_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/89/justice_sotomayor##90.mp4
+The generated video is named /home/akathpalia/data/case3/vids/89/justice_sotomayor##90_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/90/male1##91.mp4
+The generated video is named /home/akathpalia/data/case3/vids/85/male1##86_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/85.mp4
+The generated video is named /home/akathpalia/data/case3/vids/88/male1##89_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/88.mp4
+The generated video is named /home/akathpalia/data/case3/vids/89/justice_sotomayor##90_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/89.mp4
+The generated video is named /home/akathpalia/data/case3/vids/90/male1##91_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/93/male1##94.mp4
+The generated video is named /home/akathpalia/data/case3/vids/93/male1##94_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/92/justice_sotomayor##93.mp4
+The generated video is named /home/akathpalia/data/case3/vids/92/justice_sotomayor##93_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/91/justice_sotomayor##92.mp4
+The generated video is named /home/akathpalia/data/case3/vids/91/justice_sotomayor##92_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/93/male1##94_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/93.mp4
+The generated video is named /home/akathpalia/data/case3/vids/92/justice_sotomayor##93_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/92.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/94/justice_sotomayor##95.mp4
+The generated video is named /home/akathpalia/data/case3/vids/94/justice_sotomayor##95_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/94/justice_sotomayor##95_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/94.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/95/male1##96.mp4
+The generated video is named /home/akathpalia/data/case3/vids/95/male1##96_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/90/male1##91_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/90.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/91/justice_sotomayor##92_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/91.mp4
+The generated video is named /home/akathpalia/data/case3/vids/96/justice_sotomayor##97.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/97/male1##98.mp4
+The generated video is named /home/akathpalia/data/case3/vids/98/justice_alito##99.mp4
+The generated video is named /home/akathpalia/data/case3/vids/96/justice_sotomayor##97_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/98/justice_alito##99_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/97/male1##98_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/98/justice_alito##99_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/98.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/99/male1##100.mp4
+The generated video is named /home/akathpalia/data/case3/vids/99/male1##100_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/96/justice_sotomayor##97_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/96.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/100/justice_kagan##101.mp4
+The generated video is named /home/akathpalia/data/case3/vids/97/male1##98_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/97.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/99/male1##100_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/99.mp4
+The generated video is named /home/akathpalia/data/case3/vids/95/male1##96_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/95.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/100/justice_kagan##101_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/102/justice_roberts##103.mp4
+The generated video is named /home/akathpalia/data/case3/vids/102/justice_roberts##103_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/103/male1##104.mp4
+The generated video is named /home/akathpalia/data/case3/vids/101/male1##102.mp4
+The generated video is named /home/akathpalia/data/case3/vids/103/male1##104_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/102/justice_roberts##103_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/102.mp4
+The generated video is named /home/akathpalia/data/case3/vids/101/male1##102_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/104/justice_roberts##105.mp4
+The generated video is named /home/akathpalia/data/case3/vids/104/justice_roberts##105_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/104/justice_roberts##105_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/104.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/105/male1##106.mp4
+The generated video is named /home/akathpalia/data/case3/vids/105/male1##106_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/100/justice_kagan##101_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/100.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/106/justice_roberts##107.mp4
+The generated video is named /home/akathpalia/data/case3/vids/106/justice_roberts##107_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/106/justice_roberts##107_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/106.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/107/male1##108.mp4
+The generated video is named /home/akathpalia/data/case3/vids/107/male1##108_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/105/male1##106_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/105.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/108/justice_roberts##109.mp4
+The generated video is named /home/akathpalia/data/case3/vids/108/justice_roberts##109_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/108/justice_roberts##109_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/108.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/109/justice_roberts##110.mp4
+The generated video is named /home/akathpalia/data/case3/vids/109/justice_roberts##110_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/109/justice_roberts##110_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/109.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/110/justice_kagan##111.mp4
+The generated video is named /home/akathpalia/data/case3/vids/110/justice_kagan##111_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/103/male1##104_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/103.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/111/male1##112.mp4
+The generated video is named /home/akathpalia/data/case3/vids/111/male1##112_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/110/justice_kagan##111_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/110.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/112/justice_roberts##113.mp4
+The generated video is named /home/akathpalia/data/case3/vids/112/justice_roberts##113_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/112/justice_roberts##113_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/112.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/113/justice_kavanaugh##114.mp4
+The generated video is named /home/akathpalia/data/case3/vids/113/justice_kavanaugh##114_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/113/justice_kavanaugh##114_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/113.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/114/justice_kavanaugh##115.mp4
+The generated video is named /home/akathpalia/data/case3/vids/114/justice_kavanaugh##115_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/114/justice_kavanaugh##115_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/114.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/115/male1##116.mp4
+The generated video is named /home/akathpalia/data/case3/vids/115/male1##116_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/115/male1##116_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/115.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/116/justice_kavanaugh##117.mp4
+The generated video is named /home/akathpalia/data/case3/vids/116/justice_kavanaugh##117_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/116/justice_kavanaugh##117_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/116.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/117/male1##118.mp4
+The generated video is named /home/akathpalia/data/case3/vids/117/male1##118_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/117/male1##118_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/117.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/107/male1##108_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/107.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/118/justice_kavanaugh##119.mp4
+The generated video is named /home/akathpalia/data/case3/vids/118/justice_kavanaugh##119_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/119/male1##120.mp4
+The generated video is named /home/akathpalia/data/case3/vids/119/male1##120_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/118/justice_kavanaugh##119_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/118.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/120/justice_kavanaugh##121.mp4
+The generated video is named /home/akathpalia/data/case3/vids/120/justice_kavanaugh##121_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/120/justice_kavanaugh##121_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/120.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/121/male1##122.mp4
+The generated video is named /home/akathpalia/data/case3/vids/121/male1##122_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/121/male1##122_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/121.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/122/justice_roberts##123.mp4
+The generated video is named /home/akathpalia/data/case3/vids/122/justice_roberts##123_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/122/justice_roberts##123_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/122.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/123/justice_barrett##124.mp4
+The generated video is named /home/akathpalia/data/case3/vids/119/male1##120_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/119.mp4
+The generated video is named /home/akathpalia/data/case3/vids/123/justice_barrett##124_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/124/male1##125.mp4
+The generated video is named /home/akathpalia/data/case3/vids/111/male1##112_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/111.mp4
+The generated video is named /home/akathpalia/data/case3/vids/101/male1##102_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/101.mp4
+The generated video is named /home/akathpalia/data/case3/vids/124/male1##125_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/125/justice_roberts##126.mp4
+The generated video is named /home/akathpalia/data/case3/vids/125/justice_roberts##126_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/125/justice_roberts##126_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/125.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/126/male1##127.mp4
+The generated video is named /home/akathpalia/data/case3/vids/126/male1##127_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/127/justice_roberts##128.mp4
+The generated video is named /home/akathpalia/data/case3/vids/127/justice_roberts##128_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/127/justice_roberts##128_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/127.mp4
+The generated video is named /home/akathpalia/data/case3/vids/126/male1##127_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/126.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/129/justice_thomas##130.mp4
+The generated video is named /home/akathpalia/data/case3/vids/129/justice_thomas##130_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/123/justice_barrett##124_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/123.mp4
+The generated video is named /home/akathpalia/data/case3/vids/129/justice_thomas##130_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/129.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/130/female1##131.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/130/female1##131_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/128/female1##129.mp4
+The generated video is named /home/akathpalia/data/case3/vids/131/justice_thomas##132.mp4
+The generated video is named /home/akathpalia/data/case3/vids/131/justice_thomas##132_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/130/female1##131_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/130.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/128/female1##129_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/132/female1##133.mp4
+The generated video is named /home/akathpalia/data/case3/vids/132/female1##133_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/131/justice_thomas##132_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/131.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/133/justice_thomas##134.mp4
+The generated video is named /home/akathpalia/data/case3/vids/133/justice_thomas##134_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/133/justice_thomas##134_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/133.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/134/female1##135.mp4
+The generated video is named /home/akathpalia/data/case3/vids/134/female1##135_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/134/female1##135_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/134.mp4
+The generated video is named /home/akathpalia/data/case3/vids/132/female1##133_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/132.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/135/justice_thomas##136.mp4
+The generated video is named /home/akathpalia/data/case3/vids/135/justice_thomas##136_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/136/female1##137.mp4
+The generated video is named /home/akathpalia/data/case3/vids/136/female1##137_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/135/justice_thomas##136_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/135.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/137/justice_thomas##138.mp4
+The generated video is named /home/akathpalia/data/case3/vids/137/justice_thomas##138_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/137/justice_thomas##138_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/137.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/138/justice_roberts##139.mp4
+The generated video is named /home/akathpalia/data/case3/vids/138/justice_roberts##139_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/138/justice_roberts##139_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/138.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/139/female1##140.mp4
+The generated video is named /home/akathpalia/data/case3/vids/139/female1##140_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/124/male1##125_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/124.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/140/justice_roberts##141.mp4
+The generated video is named /home/akathpalia/data/case3/vids/140/justice_roberts##141_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/140/justice_roberts##141_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/140.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/141/female1##142.mp4
+The generated video is named /home/akathpalia/data/case3/vids/141/female1##142_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/136/female1##137_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/136.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/142/justice_roberts##143.mp4
+The generated video is named /home/akathpalia/data/case3/vids/142/justice_roberts##143_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/142/justice_roberts##143_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/142.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/143/female1##144.mp4
+The generated video is named /home/akathpalia/data/case3/vids/143/female1##144_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/139/female1##140_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/139.mp4
+The generated video is named /home/akathpalia/data/case3/vids/141/female1##142_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/141.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/145/female1##146.mp4
+The generated video is named /home/akathpalia/data/case3/vids/144/justice_roberts##145.mp4
+The generated video is named /home/akathpalia/data/case3/vids/144/justice_roberts##145_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/145/female1##146_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/144/justice_roberts##145_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/144.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/146/justice_roberts##147.mp4
+The generated video is named /home/akathpalia/data/case3/vids/146/justice_roberts##147_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/146/justice_roberts##147_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/146.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/147/female1##148.mp4
+The generated video is named /home/akathpalia/data/case3/vids/147/female1##148_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/145/female1##146_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/145.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/148/justice_roberts##149.mp4
+The generated video is named /home/akathpalia/data/case3/vids/148/justice_roberts##149_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/148/justice_roberts##149_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/148.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/143/female1##144_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/143.mp4
+The generated video is named /home/akathpalia/data/case3/vids/128/female1##129_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/128.mp4
+The generated video is named /home/akathpalia/data/case3/vids/149/justice_barrett##150.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/149/justice_barrett##150_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/151/justice_barrett##152.mp4
+The generated video is named /home/akathpalia/data/case3/vids/151/justice_barrett##152_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/150/female1##151.mp4
+The generated video is named /home/akathpalia/data/case3/vids/150/female1##151_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/151/justice_barrett##152_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/151.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/152/female1##153.mp4
+The generated video is named /home/akathpalia/data/case3/vids/152/female1##153_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/149/justice_barrett##150_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/149.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/147/female1##148_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/147.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/153/justice_gorsuch##154.mp4
+The generated video is named /home/akathpalia/data/case3/vids/154/female1##155.mp4
+The generated video is named /home/akathpalia/data/case3/vids/153/justice_gorsuch##154_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/154/female1##155_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/153/justice_gorsuch##154_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/153.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/155/justice_gorsuch##156.mp4
+The generated video is named /home/akathpalia/data/case3/vids/152/female1##153_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/152.mp4
+The generated video is named /home/akathpalia/data/case3/vids/155/justice_gorsuch##156_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/156/female1##157.mp4
+The generated video is named /home/akathpalia/data/case3/vids/156/female1##157_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/156/female1##157_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/156.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/157/justice_gorsuch##158.mp4
+The generated video is named /home/akathpalia/data/case3/vids/157/justice_gorsuch##158_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/157/justice_gorsuch##158_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/157.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/155/justice_gorsuch##156_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/155.mp4
+The generated video is named /home/akathpalia/data/case3/vids/158/female1##159.mp4
+The generated video is named /home/akathpalia/data/case3/vids/158/female1##159_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/159/justice_gorsuch##160.mp4
+The generated video is named /home/akathpalia/data/case3/vids/159/justice_gorsuch##160_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/159/justice_gorsuch##160_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/159.mp4
+The generated video is named /home/akathpalia/data/case3/vids/158/female1##159_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/158.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/160/female1##161.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/160/female1##161_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/161/justice_gorsuch##162.mp4
+The generated video is named /home/akathpalia/data/case3/vids/161/justice_gorsuch##162_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/161/justice_gorsuch##162_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/161.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/162/female1##163.mp4
+The generated video is named /home/akathpalia/data/case3/vids/160/female1##161_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/160.mp4
+The generated video is named /home/akathpalia/data/case3/vids/162/female1##163_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/163/justice_gorsuch##164.mp4
+The generated video is named /home/akathpalia/data/case3/vids/163/justice_gorsuch##164_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/150/female1##151_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/150.mp4
+The generated video is named /home/akathpalia/data/case3/vids/163/justice_gorsuch##164_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/163.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/164/justice_alito##165.mp4
+The generated video is named /home/akathpalia/data/case3/vids/164/justice_alito##165_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/165/female1##166.mp4
+The generated video is named /home/akathpalia/data/case3/vids/165/female1##166_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/164/justice_alito##165_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/164.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/166/justice_alito##167.mp4
+The generated video is named /home/akathpalia/data/case3/vids/166/justice_alito##167_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/162/female1##163_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/162.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/167/female1##168.mp4
+The generated video is named /home/akathpalia/data/case3/vids/167/female1##168_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/166/justice_alito##167_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/166.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/168/justice_alito##169.mp4
+The generated video is named /home/akathpalia/data/case3/vids/168/justice_alito##169_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/168/justice_alito##169_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/168.mp4
+The generated video is named /home/akathpalia/data/case3/vids/167/female1##168_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/167.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/169/female1##170.mp4
+The generated video is named /home/akathpalia/data/case3/vids/169/female1##170_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/170/justice_alito##171.mp4
+The generated video is named /home/akathpalia/data/case3/vids/170/justice_alito##171_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/170/justice_alito##171_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/170.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/171/justice_alito##172.mp4
+The generated video is named /home/akathpalia/data/case3/vids/171/justice_alito##172_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/165/female1##166_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/165.mp4
+The generated video is named /home/akathpalia/data/case3/vids/169/female1##170_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/169.mp4
+The generated video is named /home/akathpalia/data/case3/vids/154/female1##155_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/154.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/172/female1##173.mp4
+The generated video is named /home/akathpalia/data/case3/vids/173/justice_alito##174.mp4
+The generated video is named /home/akathpalia/data/case3/vids/174/female1##175.mp4
+The generated video is named /home/akathpalia/data/case3/vids/173/justice_alito##174_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/172/female1##173_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/174/female1##175_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/171/justice_alito##172_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/171.mp4
+The generated video is named /home/akathpalia/data/case3/vids/173/justice_alito##174_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/173.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/174/female1##175_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/174.mp4
+The generated video is named /home/akathpalia/data/case3/vids/176/female1##177.mp4
+The generated video is named /home/akathpalia/data/case3/vids/175/justice_alito##176.mp4
+The generated video is named /home/akathpalia/data/case3/vids/176/female1##177_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/172/female1##173_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/172.mp4
+The generated video is named /home/akathpalia/data/case3/vids/175/justice_alito##176_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/177/justice_alito##178.mp4
+The generated video is named /home/akathpalia/data/case3/vids/177/justice_alito##178_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/177/justice_alito##178_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/177.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/178/female1##179.mp4
+The generated video is named /home/akathpalia/data/case3/vids/178/female1##179_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/178/female1##179_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/178.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/179/justice_alito##180.mp4
+The generated video is named /home/akathpalia/data/case3/vids/175/justice_alito##176_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/175.mp4
+The generated video is named /home/akathpalia/data/case3/vids/179/justice_alito##180_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/180/female1##181.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/180/female1##181_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/176/female1##177_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/176.mp4
+The generated video is named /home/akathpalia/data/case3/vids/181/justice_roberts##182.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/181/justice_roberts##182_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/182/female1##183.mp4
+The generated video is named /home/akathpalia/data/case3/vids/179/justice_alito##180_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/179.mp4
+The generated video is named /home/akathpalia/data/case3/vids/182/female1##183_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/183/justice_roberts##184.mp4
+The generated video is named /home/akathpalia/data/case3/vids/183/justice_roberts##184_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/181/justice_roberts##182_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/181.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/184/female1##185.mp4
+The generated video is named /home/akathpalia/data/case3/vids/183/justice_roberts##184_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/183.mp4
+The generated video is named /home/akathpalia/data/case3/vids/180/female1##181_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/180.mp4
+The generated video is named /home/akathpalia/data/case3/vids/184/female1##185_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/186/female1##187.mp4
+The generated video is named /home/akathpalia/data/case3/vids/186/female1##187_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/185/justice_breyer##186.mp4
+The generated video is named /home/akathpalia/data/case3/vids/182/female1##183_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/182.mp4
+The generated video is named /home/akathpalia/data/case3/vids/185/justice_breyer##186_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/187/justice_roberts##188.mp4
+The generated video is named /home/akathpalia/data/case3/vids/187/justice_roberts##188_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/187/justice_roberts##188_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/187.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/188/justice_thomas##189.mp4
+The generated video is named /home/akathpalia/data/case3/vids/188/justice_thomas##189_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/188/justice_thomas##189_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/188.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/186/female1##187_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/186.mp4
+The generated video is named /home/akathpalia/data/case3/vids/189/female1##190.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/190/justice_thomas##191.mp4
+The generated video is named /home/akathpalia/data/case3/vids/190/justice_thomas##191_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/189/female1##190_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/190/justice_thomas##191_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/190.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/191/female1##192.mp4
+The generated video is named /home/akathpalia/data/case3/vids/191/female1##192_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/184/female1##185_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/184.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/192/justice_thomas##193.mp4
+The generated video is named /home/akathpalia/data/case3/vids/192/justice_thomas##193_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/191/female1##192_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/191.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/193/female1##194.mp4
+The generated video is named /home/akathpalia/data/case3/vids/193/female1##194_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/192/justice_thomas##193_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/192.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/194/justice_roberts##195.mp4
+The generated video is named /home/akathpalia/data/case3/vids/194/justice_roberts##195_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/194/justice_roberts##195_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/194.mp4
+The generated video is named /home/akathpalia/data/case3/vids/189/female1##190_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/189.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/196/female1##197.mp4
+The generated video is named /home/akathpalia/data/case3/vids/196/female1##197_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/195/justice_alito##196.mp4
+The generated video is named /home/akathpalia/data/case3/vids/185/justice_breyer##186_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/185.mp4
+The generated video is named /home/akathpalia/data/case3/vids/195/justice_alito##196_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/197/justice_alito##198.mp4
+The generated video is named /home/akathpalia/data/case3/vids/197/justice_alito##198_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/195/justice_alito##196_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/195.mp4
+The generated video is named /home/akathpalia/data/case3/vids/196/female1##197_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/196.mp4
+The generated video is named /home/akathpalia/data/case3/vids/197/justice_alito##198_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/197.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/199/justice_alito##200.mp4
+The generated video is named /home/akathpalia/data/case3/vids/199/justice_alito##200_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/198/female1##199.mp4
+The generated video is named /home/akathpalia/data/case3/vids/199/justice_alito##200_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/199.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/198/female1##199_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/200/female1##201.mp4
+The generated video is named /home/akathpalia/data/case3/vids/200/female1##201_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/201/female1##202.mp4
+The generated video is named /home/akathpalia/data/case3/vids/201/female1##202_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/200/female1##201_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/200.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/202/justice_alito##203.mp4
+The generated video is named /home/akathpalia/data/case3/vids/202/justice_alito##203_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/198/female1##199_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/198.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/202/justice_alito##203_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/202.mp4
+The generated video is named /home/akathpalia/data/case3/vids/203/female1##204.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/204/justice_alito##205.mp4
+The generated video is named /home/akathpalia/data/case3/vids/204/justice_alito##205_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/203/female1##204_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/204/justice_alito##205_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/204.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/193/female1##194_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/193.mp4
+The generated video is named /home/akathpalia/data/case3/vids/205/female1##206.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/205/female1##206_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/206/justice_alito##207.mp4
+The generated video is named /home/akathpalia/data/case3/vids/206/justice_alito##207_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/206/justice_alito##207_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/206.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/207/female1##208.mp4
+The generated video is named /home/akathpalia/data/case3/vids/207/female1##208_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/203/female1##204_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/203.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/208/justice_alito##209.mp4
+The generated video is named /home/akathpalia/data/case3/vids/208/justice_alito##209_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/201/female1##202_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/201.mp4
+The generated video is named /home/akathpalia/data/case3/vids/208/justice_alito##209_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/208.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/210/female1##211.mp4
+The generated video is named /home/akathpalia/data/case3/vids/209/justice_kavanaugh##210.mp4
+The generated video is named /home/akathpalia/data/case3/vids/210/female1##211_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/209/justice_kavanaugh##210_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/207/female1##208_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/207.mp4
+The generated video is named /home/akathpalia/data/case3/vids/205/female1##206_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/205.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/212/female1##213.mp4
+The generated video is named /home/akathpalia/data/case3/vids/212/female1##213_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/211/justice_kavanaugh##212.mp4
+The generated video is named /home/akathpalia/data/case3/vids/211/justice_kavanaugh##212_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/209/justice_kavanaugh##210_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/209.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/213/justice_kavanaugh##214.mp4
+The generated video is named /home/akathpalia/data/case3/vids/213/justice_kavanaugh##214_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/213/justice_kavanaugh##214_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/213.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/214/justice_barrett##215.mp4
+The generated video is named /home/akathpalia/data/case3/vids/214/justice_barrett##215_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/214/justice_barrett##215_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/214.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/215/female1##216.mp4
+The generated video is named /home/akathpalia/data/case3/vids/215/female1##216_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/210/female1##211_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/210.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/216/justice_barrett##217.mp4
+The generated video is named /home/akathpalia/data/case3/vids/216/justice_barrett##217_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/216/justice_barrett##217_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/216.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/212/female1##213_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/212.mp4
+The generated video is named /home/akathpalia/data/case3/vids/215/female1##216_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/215.mp4
+The generated video is named /home/akathpalia/data/case3/vids/217/female1##218.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/218/justice_barrett##219.mp4
+The generated video is named /home/akathpalia/data/case3/vids/217/female1##218_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/218/justice_barrett##219_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/219/female1##220.mp4
+The generated video is named /home/akathpalia/data/case3/vids/219/female1##220_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/218/justice_barrett##219_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/218.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/220/justice_barrett##221.mp4
+The generated video is named /home/akathpalia/data/case3/vids/220/justice_barrett##221_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/211/justice_kavanaugh##212_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/211.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/220/justice_barrett##221_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/220.mp4
+The generated video is named /home/akathpalia/data/case3/vids/219/female1##220_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/219.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/221/female1##222.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/222/justice_roberts##223.mp4
+The generated video is named /home/akathpalia/data/case3/vids/222/justice_roberts##223_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/221/female1##222_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/222/justice_roberts##223_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/222.mp4
+The generated video is named /home/akathpalia/data/case3/vids/223/general##224.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/224/justice_thomas##225.mp4
+The generated video is named /home/akathpalia/data/case3/vids/224/justice_thomas##225_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/217/female1##218_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/217.mp4
+The generated video is named /home/akathpalia/data/case3/vids/223/general##224_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/224/justice_thomas##225_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/224.mp4
+The generated video is named /home/akathpalia/data/case3/vids/225/general##226.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/225/general##226_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/226/justice_thomas##227.mp4
+The generated video is named /home/akathpalia/data/case3/vids/226/justice_thomas##227_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/226/justice_thomas##227_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/226.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/227/general##228.mp4
+The generated video is named /home/akathpalia/data/case3/vids/227/general##228_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/225/general##226_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/225.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/228/justice_thomas##229.mp4
+The generated video is named /home/akathpalia/data/case3/vids/228/justice_thomas##229_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/228/justice_thomas##229_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/228.mp4
+The generated video is named /home/akathpalia/data/case3/vids/221/female1##222_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/221.mp4
+using safetensor as default
+3DMM Extraction for source image
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/229/general##230.mp4
+The generated video is named /home/akathpalia/data/case3/vids/230/justice_thomas##231.mp4
+The generated video is named /home/akathpalia/data/case3/vids/230/justice_thomas##231_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/230/justice_thomas##231_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/230.mp4
+The generated video is named /home/akathpalia/data/case3/vids/229/general##230_full.mp4
+face enhancer....
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/229/general##230_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/229.mp4
+The generated video is named /home/akathpalia/data/case3/vids/231/justice_sotomayor##232.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/231/justice_sotomayor##232_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/232/general##233.mp4
+The generated video is named /home/akathpalia/data/case3/vids/232/general##233_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/231/justice_sotomayor##232_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/231.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/227/general##228_enhanced.mp4
+The generated video is named: /home/akathpalia/data/case3/vids/227.mp4
+using safetensor as default
+3DMM Extraction for source image
+The generated video is named /home/akathpalia/data/case3/vids/234/general##235.mp4
+The generated video is named /home/akathpalia/data/case3/vids/233/justice_breyer##234.mp4
+The generated video is named /home/akathpalia/data/case3/vids/234/general##235_full.mp4
+face enhancer....
+The generated video is named /home/akathpalia/data/case3/vids/233/justice_breyer##234_full.mp4
+face enhancer....

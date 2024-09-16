@@ -1,8 +1,7 @@
 # # -*- coding: utf-8 -*-
 # """Supreme Court TV"""
 
-# case_name = 'case3'
-# data_dir = f'/home/akathpalia/data/{case_name}'
+from config import case_name, data_dir, video_dir, output_dir, output_file, background
 
 # # """# Match original transcript with audio transcript"""
 # # import fitz  # PyMuPDF
@@ -243,113 +242,107 @@
 
 # # print("Audio split and saved successfully.")
 
-# # """# Generate Videos using SadTalker"""
+"""# Generate Videos using SadTalker"""
 
-# # # Link speaker to people ID - A classs storing all the information on People including the photos
+# Link speaker to people ID - A classs storing all the information on People including the photos
 
-# # # Iterate over the sentences and generate videos
-# # #for i, sentence in enumerate(data['sentences']):
-# # #
-# # #    speaker = sentence['speaker']
-# # #    if(i<168 and speaker != 'ROBERTS'):
-# # #        continue
-# # #
-# # #    audio_file = f'{data_dir}/audio/{i+1}.wav'
-# # #    source_image = speaker_images[speaker]
-# # #    result_dir = f'{data_dir}/vids/'
-# # #
-# # #    command = [
-# # #        "python3.8", f"{data_dir}/../SadTalker/inference.py",
-# # #        "--driven_audio", audio_file,
-# # #        "--source_image", source_image,
-# # #        "--result_dir", result_dir,
-# # #        "--checkpoint_dir", f"{data_dir}/../SadTalker/checkpoints",
-# # #        "--still", "--preprocess", "full", "--enhancer", "gfpgan"
-# # #    ]
+# Iterate over the sentences and generate videos
+# for i, sentence in enumerate(data['sentences']):
 
-# #     # Run the command
-# # #    subprocess.run(command, check=True)
+#    speaker = sentence['speaker']
+#    if(i<168 and speaker != 'ROBERTS'):
+#        continue
 
-# # #print("Videos generated successfully.")
+#    audio_file = f'{data_dir}/audio/{i+1}.wav'
+#    source_image = speaker_images[speaker]
+#    result_dir = f'{data_dir}/vids/'
 
-# # import json
-# # import os
-# # import subprocess
-# # from concurrent.futures import ThreadPoolExecutor, as_completed
+#    command = [
+#        "python3.8", f"{data_dir}/../SadTalker/inference.py",
+#        "--driven_audio", audio_file,
+#        "--source_image", source_image,
+#        "--result_dir", result_dir,
+#        "--checkpoint_dir", f"{data_dir}/../SadTalker/checkpoints",
+#        "--still", "--preprocess", "full", "--enhancer", "gfpgan"
+#    ]
 
-# # # Load the JSON file
-# # with open(f'{data_dir}/{case_name}.json', 'r') as file:
-# #     data = json.load(file)
+#     Run the command
+#    subprocess.run(command, check=True)
 
-# # # Initialize image counters
-# # male_counter = 1
-# # female_counter = 1
+# print("Videos generated successfully.")
 
-# # # Dictionary mapping speaker names to their corresponding image paths
-# # speaker_images = {}
+import json
+import os
+import subprocess
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# # def get_speaker_image(speaker):
-# #     global male_counter, female_counter
-# #     if speaker.startswith('JUSTICE'):
-# #         return f'{data_dir}/../src/images/{speaker.lower().replace(" ", "_")}.png'
-# #     elif speaker.startswith('MR.'):
-# #         image_path = f'{data_dir}/../src/images/male{male_counter}.png'
-# #         male_counter += 1
-# #         return image_path
-# #     elif speaker.startswith('MS.'):
-# #         image_path = f'{data_dir}/../src/images/female{female_counter}.png'
-# #         female_counter += 1
-# #         return image_path
-# #     elif speaker.startswith('GENERAL'):
-# #         image_path = f'{data_dir}/../src/images/general.png'
-# #         return image_path
-# #     else:
-# #         return f'{data_dir}/../src/images/prosecutor.png'
+# Load the JSON file
+with open(f'{data_dir}/{case_name}.json', 'r') as file:
+    data = json.load(file)
 
-# # # Assign unique images to each speaker
-# # for sentence in data['sentences']:
-# #     speaker = sentence['speaker']
-# #     if speaker not in speaker_images:
-# #         speaker_images[speaker] = get_speaker_image(speaker)
+# Initialize image counters
+male_counter = 1
+female_counter = 1
 
-# # # Create a directory to store the videos
-# # os.makedirs(f'{data_dir}/vids/', exist_ok=True)
+# Dictionary mapping speaker names to their corresponding image paths
+speaker_images = {}
 
-# # def generate_video(sentence_data):
-# #     i, sentence = sentence_data
-# #     speaker = sentence['speaker']
-# #     audio_file = f'{data_dir}/audio/{i+1}.wav'
-# #     source_image = speaker_images[speaker]
-# #     result_dir = f'{data_dir}/vids/'
+def get_speaker_image(speaker):
+    global male_counter, female_counter
+    if speaker.startswith('JUSTICE'):
+        return f'src/images/{speaker.lower().replace(" ", "_")}.png'
+    elif speaker.startswith('MR.'):
+        image_path = f'src/images/male{male_counter}.png'
+        male_counter += 1
+        return image_path
+    elif speaker.startswith('MS.'):
+        image_path = f'src/images/female{female_counter}.png'
+        female_counter += 1
+        return image_path
+    elif speaker.startswith('GENERAL'):
+        image_path = f'src/images/general.png'
+        return image_path
+    else:
+        return f'src/images/prosecutor.png'
 
-# #     command = [
-# #         "python3.8", f"{data_dir}/../SadTalker/inference.py",
-# #         "--driven_audio", audio_file,
-# #         "--source_image", source_image,
-# #         "--result_dir", result_dir,
-# #         "--checkpoint_dir", f"{data_dir}/../SadTalker/checkpoints",
-# #         "--still", "--preprocess", "full", "--enhancer", "gfpgan",
-# #         "--iteration", str(i),
-# #     ]
+# Assign unique images to each speaker
+for sentence in data['sentences']:
+    speaker = sentence['speaker']
+    if speaker not in speaker_images:
+        speaker_images[speaker] = get_speaker_image(speaker)
 
-# #     subprocess.run(command, check=True)
-# #     return f"Video {i} generated successfully."
+# Create a directory to store the videos
+os.makedirs(f'{video_dir}/', exist_ok=True)
 
-# # # Using ThreadPoolExecutor to manage multiple threads
-# # with ThreadPoolExecutor(max_workers=4) as executor:  # Adjust max_workers based on your hardware
-# #     futures = [executor.submit(generate_video, (i, sentence)) for i, sentence in enumerate(data['sentences'])]
-# #     for future in as_completed(futures):
-# #         try:
-# #             result = future.result()
-# #             print(result)
-# #         except Exception as e:
-# #             print(f"Exception occured: {e}")
+def generate_video(sentence_data):
+    i, sentence = sentence_data
+    speaker = sentence['speaker']
+    audio_file = f'{data_dir}/audio/{i+1}.wav'
+    source_image = speaker_images[speaker]
+    result_dir = f'{video_dir}/'
 
-# # Directory containing the MP4 files
-# video_dir = f'{data_dir}/vids/'
+    command = [
+        "python3.8", f"{data_dir}/../SadTalker/inference.py",
+        "--driven_audio", audio_file,
+        "--source_image", source_image,
+        "--result_dir", result_dir,
+        "--checkpoint_dir", f"{data_dir}/../SadTalker/checkpoints",
+        "--still", "--preprocess", "full", "--enhancer", "gfpgan",
+        "--iteration", str(i),
+    ]
 
-# # Path to the output file
-# output_file = f'{data_dir}/vids/{case_name}.mp4'
+    subprocess.run(command, check=True)
+    return f"Video {i} generated successfully."
+
+# Using ThreadPoolExecutor to manage multiple threads
+with ThreadPoolExecutor(max_workers=4) as executor:  # Adjust max_workers based on your hardware
+    futures = [executor.submit(generate_video, (i, sentence)) for i, sentence in enumerate(data['sentences'])]
+    for future in as_completed(futures):
+        try:
+            result = future.result()
+            print(result)
+        except Exception as e:
+            print(f"Exception occured: {e}")
 
 # from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip, ColorClip, concatenate_videoclips
 # import os
@@ -709,176 +702,176 @@
 # print("Final video with overlays and transitions created successfully.")
 
 # -*- coding: utf-8 -*-
-"""Supreme Court TV"""
+# """Supreme Court TV"""
 
-import os
-import re
-import json
-import cv2
-import numpy as np
-from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip, ColorClip, concatenate_videoclips, ImageSequenceClip
+# import os
+# import re
+# import json
+# import cv2
+# import numpy as np
+# from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip, ColorClip, concatenate_videoclips, ImageSequenceClip
 
-def print_system_info():
-    import psutil
-    print(f"Memory usage: {psutil.virtual_memory().percent}%")
-    print(f"CPU usage: {psutil.cpu_percent()}%")
-    print(f"Disk usage: {psutil.disk_usage('/').percent}%")
+# def print_system_info():
+#     import psutil
+#     print(f"Memory usage: {psutil.virtual_memory().percent}%")
+#     print(f"CPU usage: {psutil.cpu_percent()}%")
+#     print(f"Disk usage: {psutil.disk_usage('/').percent}%")
 
-print("Script started")
-print_system_info()
+# print("Script started")
+# print_system_info()
 
-case_name = 'case3'
-data_dir = f'/home/akathpalia/data/{case_name}'
-video_dir = f'{data_dir}/vids/'
-output_file = f'{data_dir}/vids/{case_name}_first20.mp4'
+# case_name = 'case3'
+# data_dir = f'/home/akathpalia/data/{case_name}'
+# video_dir = f'{data_dir}/vids/'
+# output_file = f'{data_dir}/vids/{case_name}_first20.mp4'
 
-print(f"Processing case: {case_name}")
-print(f"Data directory: {data_dir}")
-print(f"Video directory: {video_dir}")
-print(f"Output file: {output_file}")
+# print(f"Processing case: {case_name}")
+# print(f"Data directory: {data_dir}")
+# print(f"Video directory: {video_dir}")
+# print(f"Output file: {output_file}")
 
-# Load the JSON file
-print("Loading JSON data...")
-with open(f'{data_dir}/{case_name}.json', 'r') as file:
-    data = json.load(file)
+# # Load the JSON file
+# print("Loading JSON data...")
+# with open(f'{data_dir}/{case_name}.json', 'r') as file:
+#     data = json.load(file)
 
-# Limit data to first 20 sentences
-data['sentences'] = data['sentences'][:20]
-print(f"Limited to first 20 sentences. Total sentences: {len(data['sentences'])}")
+# # Limit data to first 20 sentences
+# data['sentences'] = data['sentences'][:20]
+# print(f"Limited to first 20 sentences. Total sentences: {len(data['sentences'])}")
 
-justices = {
-    "JUSTICE ROBERTS": ("CHIEF JUSTICE JOHN G. ROBERTS, JR.", "Appointed by President George W. Bush (2005)"),
-    "JUSTICE THOMAS": ("ASSOCIATE JUSTICE CLARENCE THOMAS", "Appointed by President George H.W. Bush (1991)"),
-    "JUSTICE ALITO": ("ASSOCIATE JUSTICE SAMUEL A. ALITO, JR.", "Appointed by President George W. Bush (2006)"),
-    "JUSTICE SOTOMAYOR": ("ASSOCIATE JUSTICE SONIA SOTOMAYOR", "Appointed by President Barack Obama (2009)"),
-    "JUSTICE KAGAN": ("ASSOCIATE JUSTICE ELENA KAGAN", "Appointed by President Barack Obama (2010)"),
-    "JUSTICE GORSUCH": ("ASSOCIATE JUSTICE NEIL M. GORSUCH", "Appointed by President Donald Trump (2017)"),
-    "JUSTICE KAVANAUGH": ("ASSOCIATE JUSTICE BRETT M. KAVANAUGH", "Appointed by President Donald Trump (2018)"),
-    "JUSTICE BARRETT": ("ASSOCIATE JUSTICE AMY CONEY BARRETT", "Appointed by President Donald Trump (2020)"),
-    "JUSTICE JACKSON": ("ASSOCIATE JUSTICE KETANJI BROWN JACKSON", "Appointed by President Joe Biden (2022)"),
-    "JUSTICE BREYER": ("ASSOCIATE JUSTICE STEPHEN G. BREYER", "Appointed by President Bill Clinton (1994)"),
-    "JUSTICE SCALIA": ("ASSOCIATE JUSTICE ANTONIN SCALIA", "Appointed by President Ronald Reagan (1986)"),
-    "JUSTICE KENNEDY": ("ASSOCIATE JUSTICE ANTHONY M. KENNEDY", "Appointed by President Ronald Reagan (1988)"),
-    "JUSTICE SANDRA DAY O'CONNOR": ("ASSOCIATE JUSTICE SANDRA DAY O'CONNOR", "Appointed by President Ronald Reagan (1981)"),
-    "JUSTICE RUTH BADER GINSBURG": ("ASSOCIATE JUSTICE RUTH BADER GINSBURG", "Appointed by President Bill Clinton (1993)")
-}
+# justices = {
+#     "JUSTICE ROBERTS": ("CHIEF JUSTICE JOHN G. ROBERTS, JR.", "Appointed by President George W. Bush (2005)"),
+#     "JUSTICE THOMAS": ("ASSOCIATE JUSTICE CLARENCE THOMAS", "Appointed by President George H.W. Bush (1991)"),
+#     "JUSTICE ALITO": ("ASSOCIATE JUSTICE SAMUEL A. ALITO, JR.", "Appointed by President George W. Bush (2006)"),
+#     "JUSTICE SOTOMAYOR": ("ASSOCIATE JUSTICE SONIA SOTOMAYOR", "Appointed by President Barack Obama (2009)"),
+#     "JUSTICE KAGAN": ("ASSOCIATE JUSTICE ELENA KAGAN", "Appointed by President Barack Obama (2010)"),
+#     "JUSTICE GORSUCH": ("ASSOCIATE JUSTICE NEIL M. GORSUCH", "Appointed by President Donald Trump (2017)"),
+#     "JUSTICE KAVANAUGH": ("ASSOCIATE JUSTICE BRETT M. KAVANAUGH", "Appointed by President Donald Trump (2018)"),
+#     "JUSTICE BARRETT": ("ASSOCIATE JUSTICE AMY CONEY BARRETT", "Appointed by President Donald Trump (2020)"),
+#     "JUSTICE JACKSON": ("ASSOCIATE JUSTICE KETANJI BROWN JACKSON", "Appointed by President Joe Biden (2022)"),
+#     "JUSTICE BREYER": ("ASSOCIATE JUSTICE STEPHEN G. BREYER", "Appointed by President Bill Clinton (1994)"),
+#     "JUSTICE SCALIA": ("ASSOCIATE JUSTICE ANTONIN SCALIA", "Appointed by President Ronald Reagan (1986)"),
+#     "JUSTICE KENNEDY": ("ASSOCIATE JUSTICE ANTHONY M. KENNEDY", "Appointed by President Ronald Reagan (1988)"),
+#     "JUSTICE SANDRA DAY O'CONNOR": ("ASSOCIATE JUSTICE SANDRA DAY O'CONNOR", "Appointed by President Ronald Reagan (1981)"),
+#     "JUSTICE RUTH BADER GINSBURG": ("ASSOCIATE JUSTICE RUTH BADER GINSBURG", "Appointed by President Bill Clinton (1993)")
+# }
 
-def add_text_overlay(clip, line1, line2, position=('center', 'bottom'), fontsize1=50, fontsize2=30, color='white', bg_color='black', bg_opacity=0.5, display_duration=5):
-    print(f"Adding text overlay: {line1}, {line2}")
-    if clip.duration >= display_duration:
-        text_clip1 = TextClip(line1, fontsize=fontsize1, color=color, font='Arial-Bold').set_duration(display_duration)
-        text_clip2 = TextClip(line2, fontsize=fontsize2, color=color, font='Arial-Bold').set_duration(display_duration)
+# def add_text_overlay(clip, line1, line2, position=('center', 'bottom'), fontsize1=50, fontsize2=30, color='white', bg_color='black', bg_opacity=0.5, display_duration=5):
+#     print(f"Adding text overlay: {line1}, {line2}")
+#     if clip.duration >= display_duration:
+#         text_clip1 = TextClip(line1, fontsize=fontsize1, color=color, font='Arial-Bold').set_duration(display_duration)
+#         text_clip2 = TextClip(line2, fontsize=fontsize2, color=color, font='Arial-Bold').set_duration(display_duration)
 
-        text_w1, text_h1 = text_clip1.size
-        text_w2, text_h2 = text_clip2.size
-        bg_width = clip.w
-        bg_height = text_h1 + text_h2 + 30
-        bg_clip = ColorClip(size=(bg_width, bg_height), color=(0, 0, 0)).set_opacity(bg_opacity).set_duration(display_duration)
+#         text_w1, text_h1 = text_clip1.size
+#         text_w2, text_h2 = text_clip2.size
+#         bg_width = clip.w
+#         bg_height = text_h1 + text_h2 + 30
+#         bg_clip = ColorClip(size=(bg_width, bg_height), color=(0, 0, 0)).set_opacity(bg_opacity).set_duration(display_duration)
 
-        if position[1] == 'bottom':
-            text_y = clip.h - bg_height - 10
-        else:
-            text_y = position[1]
+#         if position[1] == 'bottom':
+#             text_y = clip.h - bg_height - 10
+#         else:
+#             text_y = position[1]
 
-        text_clip1 = text_clip1.set_position(('center', text_y + 10))
-        text_clip2 = text_clip2.set_position(('center', text_y + text_h1 + 20))
-        bg_clip = bg_clip.set_position((0, text_y))
+#         text_clip1 = text_clip1.set_position(('center', text_y + 10))
+#         text_clip2 = text_clip2.set_position(('center', text_y + text_h1 + 20))
+#         bg_clip = bg_clip.set_position((0, text_y))
 
-        composite_clip = CompositeVideoClip([clip, bg_clip.set_start(0), text_clip1.set_start(0), text_clip2.set_start(0)])
-        return composite_clip
-    else:
-        return clip
+#         composite_clip = CompositeVideoClip([clip, bg_clip.set_start(0), text_clip1.set_start(0), text_clip2.set_start(0)])
+#         return composite_clip
+#     else:
+#         return clip
 
-print("Loading background image...")
-background_image = f"{data_dir}/../src/images/bg.png"
-background = cv2.imread(background_image)
-if background is None:
-    print(f"Error: Background image at '{background_image}' not found or cannot be loaded.")
-    raise FileNotFoundError(f"Background image at '{background_image}' not found or cannot be loaded.")
+# print("Loading background image...")
+# background_image = f"{data_dir}/../src/images/bg.png"
+# background = cv2.imread(background_image)
+# if background is None:
+#     print(f"Error: Background image at '{background_image}' not found or cannot be loaded.")
+#     raise FileNotFoundError(f"Background image at '{background_image}' not found or cannot be loaded.")
 
-def replace_frame_background(frame):
-    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-    lower_green = np.array([35, 100, 100])
-    upper_green = np.array([85, 255, 255])
-    mask = cv2.inRange(hsv, lower_green, upper_green)
-    mask_inv = cv2.bitwise_not(mask)
-    bg_resized = cv2.resize(background, (frame.shape[1], frame.shape[0]))
-    fg = cv2.bitwise_and(frame, frame, mask=mask_inv)
-    bg = cv2.bitwise_and(bg_resized, bg_resized, mask=mask)
-    combined = cv2.add(fg, bg)
-    return combined
+# def replace_frame_background(frame):
+#     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+#     lower_green = np.array([35, 100, 100])
+#     upper_green = np.array([85, 255, 255])
+#     mask = cv2.inRange(hsv, lower_green, upper_green)
+#     mask_inv = cv2.bitwise_not(mask)
+#     bg_resized = cv2.resize(background, (frame.shape[1], frame.shape[0]))
+#     fg = cv2.bitwise_and(frame, frame, mask=mask_inv)
+#     bg = cv2.bitwise_and(bg_resized, bg_resized, mask=mask)
+#     combined = cv2.add(fg, bg)
+#     return combined
 
-def replace_video_background(input_video, output_video):
-    print(f"Replacing background for video: {input_video}")
-    clip = VideoFileClip(input_video)
-    frames = []
+# def replace_video_background(input_video, output_video):
+#     print(f"Replacing background for video: {input_video}")
+#     clip = VideoFileClip(input_video)
+#     frames = []
 
-    for i, frame in enumerate(clip.iter_frames()):
-        if i % 100 == 0:
-            print(f"Processing frame {i} of video {input_video}")
-        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
-        frame_with_new_bg = replace_frame_background(frame)
-        frame_with_new_bg = cv2.cvtColor(frame_with_new_bg, cv2.COLOR_BGR2RGB)
-        frames.append(frame_with_new_bg)
+#     for i, frame in enumerate(clip.iter_frames()):
+#         if i % 100 == 0:
+#             print(f"Processing frame {i} of video {input_video}")
+#         frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+#         frame_with_new_bg = replace_frame_background(frame)
+#         frame_with_new_bg = cv2.cvtColor(frame_with_new_bg, cv2.COLOR_BGR2RGB)
+#         frames.append(frame_with_new_bg)
 
-    new_clip = ImageSequenceClip(frames, fps=clip.fps)
-    new_clip.write_videofile(output_video, codec='libx264')
-    print(f"Background replaced for video: {input_video}")
+#     new_clip = ImageSequenceClip(frames, fps=clip.fps)
+#     new_clip.write_videofile(output_video, codec='libx264')
+#     print(f"Background replaced for video: {input_video}")
 
-def merge_videos_with_transition(video_files, data, transition_duration=1):
-    print("Starting to merge videos...")
-    clips = []
-    for i, file in enumerate(video_files):
-        print(f"Processing video {i+1}/{len(video_files)}: {file}")
-        try:
-            clip = VideoFileClip(os.path.join(video_dir, file))
-            match = re.search(r'(\d+)', file)
-            if match:
-                j = int(match.group(1)) - 1
-            else:
-                raise ValueError(f"Filename {file} does not contain a valid index")
-            speaker = data[j]["speaker"]
-            line1 = speaker
+# def merge_videos_with_transition(video_files, data, transition_duration=1):
+#     print("Starting to merge videos...")
+#     clips = []
+#     for i, file in enumerate(video_files):
+#         print(f"Processing video {i+1}/{len(video_files)}: {file}")
+#         try:
+#             clip = VideoFileClip(os.path.join(video_dir, file))
+#             match = re.search(r'(\d+)', file)
+#             if match:
+#                 j = int(match.group(1)) - 1
+#             else:
+#                 raise ValueError(f"Filename {file} does not contain a valid index")
+#             speaker = data[j]["speaker"]
+#             line1 = speaker
 
-            if speaker.startswith("JUSTICE"):
-                line2 = justices[speaker][1]
-            else:
-                line2 = "Lawyer"
+#             if speaker.startswith("JUSTICE"):
+#                 line2 = justices[speaker][1]
+#             else:
+#                 line2 = "Lawyer"
 
-            print(f"Speaker: {line1}, Info: {line2}")
+#             print(f"Speaker: {line1}, Info: {line2}")
 
-            if not speaker.startswith("JUSTICE"):
-                replace_video_background(os.path.join(video_dir, file), os.path.join(video_dir, file))
+#             if not speaker.startswith("JUSTICE"):
+#                 replace_video_background(os.path.join(video_dir, file), os.path.join(video_dir, file))
 
-            if clip.duration > 10:
-                clip = add_text_overlay(clip, line1, line2, position=('center', 'bottom'), fontsize1=24, fontsize2=16, color='white', bg_color='black', bg_opacity=0.5, display_duration=8)
+#             if clip.duration > 10:
+#                 clip = add_text_overlay(clip, line1, line2, position=('center', 'bottom'), fontsize1=24, fontsize2=16, color='white', bg_color='black', bg_opacity=0.5, display_duration=8)
 
-            clips.append(clip)
-            print(f"Video {i+1} processed successfully")
-        except Exception as e:
-            print(f"Error processing video {file}: {str(e)}")
-        print_system_info()
+#             clips.append(clip)
+#             print(f"Video {i+1} processed successfully")
+#         except Exception as e:
+#             print(f"Error processing video {file}: {str(e)}")
+#         print_system_info()
 
-    print("All individual videos processed. Starting concatenation.")
-    final_clip = concatenate_videoclips(clips, method="compose")
-    print("Concatenation completed")
-    return final_clip
+#     print("All individual videos processed. Starting concatenation.")
+#     final_clip = concatenate_videoclips(clips, method="compose")
+#     print("Concatenation completed")
+#     return final_clip
 
-print("Getting video files...")
-video_files = sorted([f for f in os.listdir(video_dir) if f.endswith('.mp4')],
-                     key=lambda x: int(re.search(r'(\d+)', os.path.basename(x)).group()))[:20]
-print(f"Video files to process: {video_files}")
+# print("Getting video files...")
+# video_files = sorted([f for f in os.listdir(video_dir) if f.endswith('.mp4')],
+#                      key=lambda x: int(re.search(r'(\d+)', os.path.basename(x)).group()))[:20]
+# print(f"Video files to process: {video_files}")
 
-print("Merging videos...")
-final_clip = merge_videos_with_transition(video_files, data['sentences'], transition_duration=1)
+# print("Merging videos...")
+# final_clip = merge_videos_with_transition(video_files, data['sentences'], transition_duration=1)
 
-print("Writing final video...")
-print_system_info()
-try:
-    final_clip.write_videofile(output_file, codec="libx264")
-    print(f"Final video written successfully to {output_file}")
-except Exception as e:
-    print(f"Error writing final video: {str(e)}")
+# print("Writing final video...")
+# print_system_info()
+# try:
+#     final_clip.write_videofile(output_file, codec="libx264")
+#     print(f"Final video written successfully to {output_file}")
+# except Exception as e:
+#     print(f"Error writing final video: {str(e)}")
 
-print("Script completed")
-print_system_info()
+# print("Script completed")
+# print_system_info()
